@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_eM9vsJyGEeaQyJVS-36HMg">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_fofSgJyGEeaQyJVS-36HMg" featurename="bindingContexts" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:BindingContext" xmi:id="_iV4F0JyGEeaQyJVS-36HMg" elementId="org.grits.toolbox.core.bindingcontext.entry" name="Entry" description="It is a context used for identifying entry context in grits"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_t7HqoJyGEeaQyJVS-36HMg" featurename="descriptors" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_wtfroJyGEeaQyJVS-36HMg" elementId="plugin.ms.annotation.views.MSAnnotationMultiPageViewer" label="MS Annotation Overview" iconURI="platform:/plugin/org.grits.toolbox.entry.ms.annotation/icons/SimGlycanData.png" bindingContexts="_iV4F0JyGEeaQyJVS-36HMg" allowMultiple="true" category="org.grits.toolbox.property.ms_annotation" closeable="true" dirtyable="true" contributionURI="bundleclass://org.grits.toolbox.entry.ms.annotation/org.grits.toolbox.entry.ms.annotation.views.tabbed.MSAnnotationMultiPageViewerWorker">
+      <tags>default</tags>
+      <tags>removeOnHide</tags>
+    </elements>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_WPK-IKB1EeaQyJVS-36HMg" elementId="plugin.ms.annotation.views.MSAnnotationSelectionView" label="Edit Annotations" contributionURI="bundleclass://org.grits.toolbox.entry.ms.annotation/org.grits.toolbox.entry.ms.annotation.views.tabbed.MSAnnotationSelectionView"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_KwBtQJ-kEeaQyJVS-36HMg" featurename="commands" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:Command" xmi:id="_MwZpkJ-kEeaQyJVS-36HMg" elementId="org.grits.toolbox.entry.ms.handler.viewMSAnnotationResults" commandName="View MS Annotation Results"/>
+    <elements xsi:type="commands:Command" xmi:id="_WmnDMKB0EeaQyJVS-36HMg" elementId="org.grits.toolbox.entry.ms.annotation.command.export" commandName="Export"/>
+    <elements xsi:type="commands:Command" xmi:id="_mFM4IKB0EeaQyJVS-36HMg" elementId="org.grits.toolbox.entry.ms.annotation.command.filter" commandName="Filter"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_xeuysJ-kEeaQyJVS-36HMg" featurename="handlers" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:Handler" xmi:id="_0eJKIJ-kEeaQyJVS-36HMg" elementId="org.grits.toolbox.entry.ms.annotation.handler.viewMSAnnotResults" contributionURI="bundleclass://org.grits.toolbox.entry.ms.annotation/org.grits.toolbox.entry.ms.annotation.handler.ViewMSAnnotationResults" command="_MwZpkJ-kEeaQyJVS-36HMg"/>
+    <elements xsi:type="commands:Handler" xmi:id="_YZ6z4KB0EeaQyJVS-36HMg" elementId="org.grits.toolbox.entry.ms.annotation.handler.export" contributionURI="bundleclass://org.grits.toolbox.entry.ms.annotation/org.grits.toolbox.entry.ms.annotation.handler.MSAnnotationExportCommand" command="_WmnDMKB0EeaQyJVS-36HMg"/>
+    <elements xsi:type="commands:Handler" xmi:id="_nbXZ0KB0EeaQyJVS-36HMg" elementId="org.grits.toolbox.entry.ms.annotation.handler.filter" contributionURI="bundleclass://org.grits.toolbox.entry.ms.annotation/org.grits.toolbox.entry.ms.annotation.handler.ShowMSAnnotationFilterDialog" command="_mFM4IKB0EeaQyJVS-36HMg"/>
+  </fragments>
+</fragment:ModelFragments>

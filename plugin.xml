@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         point="org.grits.toolbox.core.propertyreader">
+      <reader
+            class="org.grits.toolbox.entry.ms.annotation.property.MSAnnotationPropertyReader"
+            propertyId="org.grits.toolbox.property.ms_annotation">
+      </reader>
+   </extension>
+   <extension
+         id="org.grits.toolbox.entry.ms.annotation.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+
+</plugin>
